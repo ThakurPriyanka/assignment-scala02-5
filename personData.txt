@@ -1,0 +1,1 @@
+{"name":"Priyanka","age":23,"adress":{"street":"GTB nagar","houseNo":2555},"salary":2500.0}
