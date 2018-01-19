@@ -27,11 +27,11 @@ object Application {
     implicit val formats = DefaultFormats
     val person = new Person(name, age, day, address, salary, lucky)
     val personJscon = write(person)
-    val writer = new PrintWriter(new File("personData.txt"))
-    writer.write(personJscon)
+    val fileWriter = new PrintWriter(new File("personData.txt"))
+    fileWriter.write(personJscon)
 
 
-    writer.close()
+    fileWriter.close()
 
     Source.fromFile("personData.txt").foreach { x => log.info(x) }
   }
