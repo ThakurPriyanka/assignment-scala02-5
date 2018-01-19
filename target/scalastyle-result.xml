@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<checkstyle version="5.0">
- <file name="/home/knoldus/IdeaProjects/assignment-scala02-5/src/main/scala/edu/knoldus/Person.scala">
-  <error column="18" line="3" source="org.scalastyle.scalariform.MagicNumberChecker" severity="warning" message="Magic Number"/>
- </file>
- <file name="/home/knoldus/IdeaProjects/assignment-scala02-5/src/main/scala/edu/knoldus/Address.scala">
-  <error column="18" line="3" source="org.scalastyle.scalariform.MagicNumberChecker" severity="warning" message="Magic Number"/>
- </file>
-</checkstyle>
