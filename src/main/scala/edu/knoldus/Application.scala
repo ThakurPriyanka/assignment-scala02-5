@@ -30,10 +30,11 @@ object Application {
     val fileWriter = new PrintWriter(new File("personData.txt"))
     fileWriter.write(personJscon)
 
-
     fileWriter.close()
+    val personRead = Source.fromFile("personData.txt").mkString
+    log.info(s"${read[Person](personRead).toString}")
 
-    Source.fromFile("personData.txt").foreach { x => log.info(x) }
+    //Source.fromFile("personData.txt").foreach { x => log.info(x)}
   }
 
 
